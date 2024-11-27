@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Hack Club High Seas Voter",
+  "version": "1.0",
+  "description": "Generate a 15-word reason for voting on a project using AI.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_popup_container_height": 400,
+    "default_popup_container_width": 300
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://highseas.hackclub.com/wonderdome"],
+      "js": ["content.js"]
+    }
+  ]
+}

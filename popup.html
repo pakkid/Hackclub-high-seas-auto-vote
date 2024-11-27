@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hack Club High Seas Voter</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+    body {
+      font-family: 'Pirata One', cursive;
+      margin: 20px;
+      width: 400px;
+      height: 500px;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 35px;
+      margin-bottom: 20px;
+      position: absolute;
+      top: 0;
+
+    }
+
+    p {
+      font-size: 20px;
+      position: inherit;
+      margin-bottom: 20px;
+      top: 50px;
+    }
+
+    .input-field {
+      margin-bottom: 20px;
+    }
+
+    .project-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 5px;
+      border: 2px solid #7e7e7e;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      color: #7e7e7e;
+      background-color: white;
+      transition: background-color 0.3s, color 0.3s;
+      position: relative;
+    }
+
+    .project-button.selected {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #reason {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ye Olde Voting Reason Forgin' Contraption!</h1>
+  <p>Choose yer booty to cast yer vote, matey!</p>
+  <div class="input-field">
+    <div id="project-buttons">
+      <button id="vote-left" class="project-button">Project 1
+      </button>
+      <button id="vote-right" class="project-button">Project 2
+      </button>
+    </div>
+  </div>
+  <button id="generate">Conjure a Rousin' Reason!</button>
+  <p id="reason"></p>
+  <script src="popup.js"></script>
+</body>
+</html>
